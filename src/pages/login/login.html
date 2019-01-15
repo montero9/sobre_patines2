@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar hideBackButton="true" color="turquesa1">
+    <ion-buttons end>
+      <img height="40" src="../../assets/imgs/logo_escuela.png">
+    </ion-buttons>
+    <ion-title>Sobre patines</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="content_login">
+
+  <div text-center style="padding-top:50px">
+  <ion-img width="40%" height="125px" src="../../assets/imgs/login_icon.png"></ion-img>
+  </div>
+  <div style="padding-top:30px">
+  <form (ngSubmit)="login()">
+
+    <ion-item>
+      <ion-label>Usuario</ion-label>
+      <ion-input id="inUsuario" type="text" [(ngModel)]="datos.user" name="user" clearInput required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="datos.pass" name="pass" required></ion-input>
+    </ion-item>
+    <br>
+    <button ion-button type="submit" block color="turquesa_oscuro">Enviar</button>
+
+  </form>
+  </div>
+</ion-content>

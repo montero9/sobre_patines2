@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar hideBackButton="true" color="turquesa1">
+    <ion-title>
+      Sobre patines
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="content_home">
+  <br/>
+  <form (ngSubmit)="logForm()" >
+    <h1 ion-text color="turquesa_oscuro">
+      Datos de la clase
+    </h1>
+    <br/>
+
+    <ion-item>
+      <ion-label id="lbFecha">Fecha*</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="todo.fecha" name="fecha"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label id="lbResumen">Resumen*</ion-label>
+      <ion-textarea name="resumen" [(ngModel)]="todo.resumen" style="height:200px"></ion-textarea>
+    </ion-item>
+    <br/>
+
+    <button ion-button type="submit" full round color="turquesa_oscuro">Enviar</button>
+
+  </form>
+  <br/>
+  <button ion-button full round (click)="logout()" color="turquesa_oscuro">Desconectarse</button>
+</ion-content>

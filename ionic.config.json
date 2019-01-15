@@ -1,0 +1,7 @@
+{
+  "name": "sobre_patines",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
