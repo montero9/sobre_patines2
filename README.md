@@ -1,4 +1,4 @@
-# sobre_patines2
+# sobre_patines
 Sobre Patines es una aplicación construida mediante ionic.
 
 Dicha aplicación, permite llevar el registro un registro de las clases de una escuela deportiva. Mediante esta esta aplicación el monitor de la clase pordrá identificarse y registrar un comentario acerca de cómo ha ido la clase.
